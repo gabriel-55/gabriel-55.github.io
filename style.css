@@ -164,7 +164,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 0;
+    height: 80vh;
 }
 
 .section__pic-container {
@@ -175,7 +175,7 @@ section {
 }
 
 .section__text {
-    align-self: center;
+    /* align-self: center; */
     text-align: center;
 }
 
