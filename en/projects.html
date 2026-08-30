@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="An introduction to current research and software projects." />
+    <link rel="canonical" href="https://gabriel-55.github.io/en/projects.html" />
+<link rel="alternate" hreflang="en" href="https://gabriel-55.github.io/en/projects.html" />
+    <link rel="alternate" hreflang="ja" href="https://gabriel-55.github.io/ja/projects.html" />
+    <link rel="alternate" hreflang="x-default" href="https://gabriel-55.github.io/en/projects.html" />
+    <title>Research & Projects — Shun Yat Choy</title>
+    <script>
+      (() => {
+        const key = "portfolio-theme";
+        let theme = null;
+        try {
+          const saved = localStorage.getItem(key);
+          if (saved === "dark" || saved === "light") theme = saved;
+        } catch {}
+        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-name" href="index.html">Shun Yat Choy (Shinichi)</a>
+      <div class="header-controls">
+        <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+        <a href="background.html">Background</a>
+        <a href="projects.html" aria-current="page">Research &amp; Projects</a>
+        <a class="language-switch" href="../ja/projects.html">日本語</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change colour theme" title="Change colour theme">
+          <span class="theme-icon" data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu" title="Open menu">
+          <span class="menu-icon" data-menu-icon aria-hidden="true">☰</span>
+          <span class="sr-only" data-menu-label>Menu</span>
+        </button>
+      </div>
+    </header>
+
+<main class="page projects-page">
+      <section class="page-intro">
+        <h1>Research &amp; Projects</h1>
+        <p class="intro-text">An introduction to my research activities and software projects.</p>
+      </section>
+
+      <h2 class="page-section-label">Research</h2>
+      <section class="project-detail research-detail">
+        <div class="project-detail-meta"><span>Master's research</span></div>
+        <div class="project-detail-main">
+          <div class="project-title"><h2>Pseudo-Boolean Optimisation in Cafeteria Menu Optimisation Problems</h2></div>
+          <p>I am researching how pseudo-boolean optimisation can be applied to cafeteria menu planning.</p>
+          <dl class="project-facts">
+            <div><dt>Institution</dt><dd>Kobe University</dd></div>
+            <div><dt>Supervisor</dt><dd>Prof. Nobutada Fujii</dd></div>
+            <div><dt>Programme</dt><dd>Master of Engineering · System Informatics</dd></div>
+            <div><dt>Status</dt><dd>Ongoing research</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="project-detail research-detail">
+        <div class="project-detail-meta"><span>Bachelor's research</span></div>
+        <div class="project-detail-main">
+          <div class="project-title"><h2>Solver of Pseudo-Boolean Optimisation Problems</h2></div>
+          <p>I worked on extending the functionality of a solver for pseudo-boolean optimisation problems.</p>
+          <dl class="project-facts">
+            <div><dt>Institution</dt><dd>The University of Auckland</dd></div>
+            <div><dt>Supervisor</dt><dd>Dr. Marc Vinyals</dd></div>
+            <div><dt>Programme</dt><dd>Bachelor of Science · Computer Science and Mathematics</dd></div>
+            <div><dt>Status</dt><dd>Completed</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <h2 class="page-section-label software-section-label">Software projects</h2>
+      <section class="project-detail software-detail">
+        <div class="project-detail-meta"><span>Capstone project</span></div>
+        <div class="project-detail-main">
+          <div class="project-title"><h2>Faultless</h2><div class="project-links"><a href="https://www.capitalise.space/projects/685f7b0f16470ab93aecf6d1" target="_blank" rel="noreferrer">View page ↗</a><a href="https://github.com/gabriel-55/Faultless" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+          <p class="project-lead">AI-Powered Proofreader for Engineering Reports</p>
+          <p>An automated review system for engineering reports developed as a team for my capstone project. I was responsible for the backend. It automatically checks reports before the final review by senior engineers.</p>
+          <div class="project-media video-embed">
+            <iframe src="https://www.youtube.com/embed/ijC3roMONuA" title="Faultless demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <dl class="project-facts">
+            <div><dt>Technology</dt><dd>Python · Django · LangChain · Google Gemini · Langfuse</dd></div>
+            <div><dt>Features</dt><dd> · Checks for clarity, structure, technical accuracy, and compliance with relevant standards<br /> · Comments in Word documents<br /> · Annotations, tracked changes, and summaries of detected issues</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="project-detail software-detail">
+        <div class="project-detail-meta"><span>Game project</span></div>
+        <div class="project-detail-main">
+          <div class="project-title"><h2>Boss Fighter</h2><div class="project-links"><a href="https://gabriel-555.itch.io/boss-fighter" target="_blank" rel="noreferrer">View page ↗</a><a href="https://github.com/gabriel-55/Boss-Fighter" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+          <p class="project-lead">A 2D Action Game about Fighting a Boss</p>
+          <p>A game created for the 2023 GDG Jam hosted by the University of Auckland's Game Developer Guild (GDG). I was responsible for character controls and the UI.</p>
+          <div class="project-media project-image">
+            <img src="https://img.itch.zone/aW1nLzI5MjU2MTQxLnBuZw==/347x500/3oLZZv.png" alt="Screenshot of Boss Fighter" loading="lazy" />
+          </div>
+          <dl class="project-facts">
+            <div><dt>Technology</dt><dd>C# · Unity · Universal Render Pipeline</dd></div>
+            <div><dt>Features</dt><dd> · Horizontal movement, jumping, and dashing<br /> · Start, pause, victory, and defeat screens</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="project-detail software-detail">
+        <div class="project-detail-meta"><span>Community software</span></div>
+        <div class="project-detail-main">
+          <div class="project-title"><h2>&quot;CHUNITHM Best Songs Image Generator NEW&quot; Unofficial Discord Bot</h2><a href="https://github.com/gabriel-55/cbig-bot" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+          <p class="project-lead">A Discord Bot for CHUNITHM Players</p>
+          <p>A bot that makes “CHUNITHM Best Songs Image Generator NEW” available through Discord. It can generate best 50 images from a chunirec username, while also allowing users to view and edit ScoreSup score data through Discord commands.</p>
+          <dl class="project-facts">
+            <div><dt>Technology</dt><dd>Node.js · Discord.js · Puppeteer</dd></div>
+            <div><dt>Features</dt><dd> · Image generation<br /> · Updating and managing song score lists</dd></div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Shun Yat Choy (Shinichi)</span><span>© 2026</span></footer>
+    <script src="../assets/js/theme.js" defer></script>
+    <script src="../assets/js/site.js" defer></script>
+  </body>
+</html>

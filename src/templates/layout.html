@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{description}}" />
+    <link rel="canonical" href="{{canonical}}" />
+{{language-links}}
+    <title>{{title}}</title>
+    <script>
+      (() => {
+        const key = "portfolio-theme";
+        let theme = null;
+        try {
+          const saved = localStorage.getItem(key);
+          if (saved === "dark" || saved === "light") theme = saved;
+        } catch {}
+        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="stylesheet" href="{{asset-root}}assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-name" href="{{home-href}}">{{name}}</a>
+      <div class="header-controls">
+        <nav class="site-nav" id="site-navigation" aria-label="{{nav-aria}}">
+          {{navigation}}
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change colour theme" title="Change colour theme">
+          <span class="theme-icon" data-theme-icon aria-hidden="true">☀️</span>
+        </button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu" title="Open menu">
+          <span class="menu-icon" data-menu-icon aria-hidden="true">☰</span>
+          <span class="sr-only" data-menu-label>Menu</span>
+        </button>
+      </div>
+    </header>
+
+{{content}}
+
+    <footer class="site-footer"><span>{{name}}</span><span>© 2026</span></footer>
+    <script src="{{asset-root}}assets/js/theme.js" defer></script>
+    <script src="{{asset-root}}assets/js/site.js" defer></script>
+  </body>
+</html>
